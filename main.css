@@ -80,8 +80,21 @@ header nav ul li a:hover{
     position: absolute;
     bottom: 17px;
     left: 55px;
-
+    animation: floating 3s ease-in-out infinite;
 }
+@keyframes floating{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(15px) ;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
 .s-hero .ilustra {
     padding: 0 1.5rem;
 }
@@ -344,7 +357,6 @@ footer .copy{
         max-width: 60px;
     }
 }
-
 @media(max-width: 560px) {
     header{
         height: 72px;
